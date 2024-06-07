@@ -1,0 +1,317 @@
+'use client'
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import { BackgroundGradient } from "@/components/ui/background-gradient";
+import Sponsors from '@/components/Sponsors';
+
+const Page = () => {
+  const org_team = [
+    {
+      name: "Ayush Goyal",
+      title: "Chair, SDC USAR",
+      imageUrl: "/anon.png",
+      linkedIn : ""
+    },
+    {
+      name: "Priyanshu Singh",
+      title: "Vice Chair, SDC USAR",
+      imageUrl: "/vice.jpg",
+      linkedIn : "https://www.linkedin.com/in/27priyanshu/"
+    },
+    {
+      name: "Shubh Sardana",
+      title: "PR Lead, SDC USAR",
+      imageUrl: "/shubh.jpeg",
+      linkedIn : ""
+    },
+    {
+      name: "Ayush Gupta",
+      title: "Lead Dev, SDC USAR",
+      imageUrl: "/anon.png",
+      linkedIn : ""
+    },
+    // {
+    //   name: "Aditya Singh",
+    //   title: "Lead Dev, SDC USAR",
+    //   imageUrl: "/adi.jpeg",
+    // },
+    // {
+    //   name: "Aman Sharma",
+    //   title: "Lead Dev, SDC USAR",
+    //   imageUrl: "/rj.jpeg",
+    // },
+    // {
+    //   name: "Avinash Raj Singh",
+    //   title: "Lead Dev, SDC USAR",
+    //   imageUrl: "/rj.jpeg",
+    // },
+  ];
+  const web_team = [
+    {
+      name: "Vansh Goel",
+      title: "Lead, Web Team",
+      imageUrl: "/vansh.jpeg",
+      linkedIn : "https://linkedin.com/in/vansh--goel"
+    },
+    {
+      name: "Satyam Jha",
+      title: "Co-Lead, Web Team",
+      imageUrl: "/sat.jpg",
+      linkedIn : ""
+    },
+    {
+      name: "Nikhil Chopra",
+      title: "Web Developer",
+      imageUrl: "/nikhil.jpg",
+      linkedIn : "https://www.linkedin.com/in/nikhil-chopra-238334270"
+    },
+    {
+      name: "Tanishq Nirwan",
+      title: "Web Developer",
+      imageUrl: "/tanishq.jpeg",
+      linkedIn : ""
+    },
+    {
+      name: "Shreya Shree",
+      title: "Web Developer",
+      imageUrl: "/shreya.jpg",
+      linkedIn : "https://www.linkedin.com/in/shreya-shree-a0427427b"
+    },    
+    // {
+    //   name: "Mansi Aggarwal",
+    //   title: "Developer, Web Team",
+    //   imageUrl: "/agpt.jpeg",
+    // },    
+  ];
+
+  const graphic_team = [
+    {
+      name: "Vedant Sharma",
+      title: "Lead, Graphics Team",
+      imageUrl: "/ved.jpeg",
+      linkedIn : "https://www.linkedin.com/in/vedant-sharma-477640190?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      name: "Varun Jaiswal",
+      title: "Graphic Designer",
+      imageUrl: "/virus.jpeg",
+      linkedIn : ""
+    },
+    {
+      name: "Tushar Thakryan",
+      title: "Graphic Designer",
+      imageUrl: "/tushar.PNG",
+      linkedIn : ""
+    },
+    
+  ];
+
+  const sponsors_team = [
+    {
+      name: "Ayush Aggarwal",
+      title: "Lead, Sponsorship Team",
+      imageUrl: "/ayush.png",
+      linkedIn : "https://www.linkedin.com/in/ayush80942"
+    },
+    {
+      name: "Divyanshu Shukla",
+      title: "Co Lead, Sponsorship Team",
+      imageUrl: "/dvsh.jpg",
+      linkedIn : "https://www.linkedin.com/in/divyanshushukladev02"
+    },
+    {
+      name: "Yash Khattar",
+      title: "Sponsorship Team",
+      imageUrl: "/yash.jpg",
+      linkedIn : "https://www.linkedin.com/in/yash-khattar-a81a06246/"
+    },
+    {
+      name: "Karan Bhatia",
+      title: "Sponsorship Team",
+      imageUrl: "/karan.jpg",
+      linkedIn : ""
+    },
+    {
+      name: "Ansh Garg",
+      title: "Sponsorship Team",
+      imageUrl: "/ansh.jpg",
+      linkedIn : "https://linkedin.com/in/ansh-garg-777ab7258"
+    },
+    {
+      name: "Yusuf",
+      title: "Sponsorship Team",
+      imageUrl: "/ysf.jpg",
+      linkedIn : ""
+    },
+    
+  ];
+  const ground_team = [
+    {
+      name: "Ritvick Johari",
+      title: "Ground Team",
+      imageUrl: "/jj.jpg",
+      linkedIn: ""
+    },
+    {
+      name: "Alok Jha",
+      title: "Ground Team",
+      imageUrl: "/alok.jpeg",
+      linkedIn: "https://www.linkedin.com/in/alok-kumar-98a712263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },]
+
+  return (
+    <div className=' dark:bg-black dark:bg-grid-white/[0.2] bg-grid-white/[0.06] bg-black overflow-hidden '>
+      <Navbar />
+      <div className="rounded-2xl text-white flex flex-col justify-center items-center overflow-hidden -z-1 shadow-lg shadow-black bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-transparent via-gray-600/5 to-transparent">
+        {/* TODO */}
+        <div id="team" className='px-8 py-8 w-full content-center text-white rounded overflow-hidden z-1 shadow-lg shadow-black bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-transparent via-gray-600/5 to-transparent '>
+          {/* Decorational  */}
+          <div className="relative w-full grid place-content-center -z-5">
+            <div className="absolute top-2 left-20 w-72 h-72 bg-purple-300/90 rounded-full mix-blend-soft-light filter blur-3xl opacity-100 animate-accordion-down"></div>
+            <div className="absolute bottom-1 right-10 w-72 h-72 bg-yellow-300/90 rounded-full mix-blend-soft-light filter blur-3xl opacity-100 animate-accordion-up"></div>
+            <div className="absolute top-10 left-0 w-72 h-72 bg-pink-300/90 rounded-full mix-blend-soft-light filter blur-3xl opacity-100 animate-accordion-down"></div>
+          </div>
+          {/* Functional  */}
+          <div className='flex relative justify-end flex-col sm:ml-10 pb-1 mb-12'>
+            <h1 className="font-bold text-6xl sm:text-[8rem] opacity-15">Faculty </h1>
+            <h4 className='absolute top-5 left-3 sm:top-16 font-semibold text-indigo-400 text-2xl sm:text-4xl'>Faculty Mentor</h4>
+          </div>
+
+         <div className="flex justify-center mx-8">
+         <div className="grid grid-cols-1 gap-4 md:flex md:gap-16 ">
+            <BackgroundGradient imageUrl="/dean.jpeg" name="Prof. Arvinder Kaur" title="Dean, USAR" linkedIn="" className="rounded-[22px] max-w-sm p-1 bg-zinc-900 object-contain">
+            </BackgroundGradient>
+            <BackgroundGradient imageUrl="/rj.jpeg" name="Dr. Rahul Johari" title="Faculty Mentor, SDC USAR" linkedIn="" className="rounded-[22px] max-w-sm p-1 bg-zinc-900 object-contain">
+            </BackgroundGradient>
+
+
+          </div>
+         </div>
+
+
+          <div className="relative w-full grid place-content-center -z-5 mt-16">
+            <div className="absolute top-2 left-20 w-72 h-72 bg-purple-300/90 rounded-full mix-blend-soft-light filter blur-3xl opacity-100 animate-accordion-down"></div>
+            <div className="absolute bottom-1 right-10 w-72 h-72 bg-yellow-300/90 rounded-full mix-blend-soft-light filter blur-3xl opacity-100 animate-accordion-up"></div>
+            <div className="absolute top-10 left-0 w-72 h-72 bg-pink-300/90 rounded-full mix-blend-soft-light filter blur-3xl opacity-100 animate-accordion-down"></div>
+          </div>
+          {/* Functional  */}
+          <div className='flex relative justify-end flex-col sm:ml-10 pb-1 mb-12'>
+            <h1 className="font-bold text-6xl sm:text-[8rem] opacity-15">Organizers</h1>
+            <h4 className='absolute top-5 left-3 sm:top-16 font-semibold text-indigo-400 text-2xl sm:text-4xl'>Organising Team</h4>
+          </div>
+           {
+            <div className="flex justify-center mx-auto md:mx-12  my-16 md:my-24">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-16 ">
+               {
+                org_team.map((team, index) => (
+                  <BackgroundGradient key={index} linkedIn = {team.linkedIn}  imageUrl={team.imageUrl} name={team.name} title={team.title} className="rounded-[22px] max-w-sm p-1 bg-zinc-900 object-contain"/>
+                ))
+               }  
+   
+             </div>
+            </div>
+           }
+
+
+          <div className="relative w-full grid place-content-center -z-5 mt-16">
+            <div className="absolute top-2 left-20 w-72 h-72 bg-purple-300/90 rounded-full mix-blend-soft-light filter blur-3xl opacity-100 animate-accordion-down"></div>
+            <div className="absolute bottom-1 right-10 w-72 h-72 bg-yellow-300/90 rounded-full mix-blend-soft-light filter blur-3xl opacity-100 animate-accordion-up"></div>
+            <div className="absolute top-10 left-0 w-72 h-72 bg-pink-300/90 rounded-full mix-blend-soft-light filter blur-3xl opacity-100 animate-accordion-down"></div>
+          </div>
+          {/* Functional  */}
+          <div className='flex relative justify-end flex-col sm:ml-10 pb-1'>
+            <h1 className="font-bold text-6xl sm:text-[8rem] opacity-15">Web Team </h1>
+            <h4 className='absolute top-5 left-3 sm:top-16 font-semibold text-indigo-400 text-2xl sm:text-4xl'>Web Team</h4>
+          </div>
+
+          {
+            <div className="flex justify-center mx-auto md:mx-12  my-16 md:my-24">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-16 ">
+               {
+                web_team.map((team, index) => (
+                  <BackgroundGradient key={index} linkedIn = {team.linkedIn} imageUrl={team.imageUrl} name={team.name} title={team.title} className="rounded-[22px] max-w-sm p-1 bg-zinc-900 object-contain"/>
+                ))
+               }  
+   
+             </div>
+            </div>
+           }
+          <div className="relative w-full grid place-content-center -z-5 mt-16">
+            <div className="absolute top-2 left-20 w-72 h-72 bg-purple-300/90 rounded-full mix-blend-soft-light filter blur-3xl opacity-100 animate-accordion-down"></div>
+            <div className="absolute bottom-1 right-10 w-72 h-72 bg-yellow-300/90 rounded-full mix-blend-soft-light filter blur-3xl opacity-100 animate-accordion-up"></div>
+            <div className="absolute top-10 left-0 w-72 h-72 bg-pink-300/90 rounded-full mix-blend-soft-light filter blur-3xl opacity-100 animate-accordion-down"></div>
+          </div>
+          {/* Functional  */}
+          <div className='flex relative justify-end flex-col sm:ml-10 pb-1'>
+            <h1 className="font-bold text-6xl sm:text-[8rem] opacity-15">Graphics Team </h1>
+            <h4 className='absolute top-5 left-3 sm:top-16 font-semibold text-indigo-400 text-2xl sm:text-4xl'>Graphics Team</h4>
+          </div>
+
+          {
+            <div className="flex justify-center mx-auto md:mx-12  my-16 md:my-24">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-16 ">
+               {
+                graphic_team.map((team, index) => (
+                  <BackgroundGradient key={index} linkedIn= {team.linkedIn} imageUrl={team.imageUrl} name={team.name} title={team.title} className="rounded-[22px] max-w-sm p-1 bg-zinc-900 object-contain"/>
+                ))
+               }  
+   
+             </div>
+            </div>
+           }
+
+<div className="relative w-full grid place-content-center -z-5 mt-16">
+            <div className="absolute top-2 left-20 w-72 h-72 bg-purple-300/90 rounded-full mix-blend-soft-light filter blur-3xl opacity-100 animate-accordion-down"></div>
+            <div className="absolute bottom-1 right-10 w-72 h-72 bg-yellow-300/90 rounded-full mix-blend-soft-light filter blur-3xl opacity-100 animate-accordion-up"></div>
+            <div className="absolute top-10 left-0 w-72 h-72 bg-pink-300/90 rounded-full mix-blend-soft-light filter blur-3xl opacity-100 animate-accordion-down"></div>
+          </div>
+          {/* Functional  */}
+          <div className='flex relative justify-end flex-col sm:ml-10 pb-1'>
+            <h1 className="font-bold text-6xl sm:text-[8rem] opacity-15">Sponsorship </h1>
+            <h4 className='absolute top-5 left-3 sm:top-16 font-semibold text-indigo-400 text-2xl sm:text-4xl'>Sponsorship Team</h4>
+          </div>
+
+          {
+            <div className="flex justify-center mx-auto md:mx-12  my-16 md:my-24">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-16 ">
+               {
+                sponsors_team.map((team, index) => (
+                  <BackgroundGradient key={index} linkedIn = {team.linkedIn} imageUrl={team.imageUrl} name={team.name} title={team.title} className="rounded-[22px] max-w-sm p-1 bg-zinc-900 object-contain"/>
+                ))
+               }  
+   
+             </div>
+            </div>
+           }
+
+<div className="relative w-full grid place-content-center -z-5 mt-16">
+            <div className="absolute top-2 left-20 w-72 h-72 bg-purple-300/90 rounded-full mix-blend-soft-light filter blur-3xl opacity-100 animate-accordion-down"></div>
+            <div className="absolute bottom-1 right-10 w-72 h-72 bg-yellow-300/90 rounded-full mix-blend-soft-light filter blur-3xl opacity-100 animate-accordion-up"></div>
+            <div className="absolute top-10 left-0 w-72 h-72 bg-pink-300/90 rounded-full mix-blend-soft-light filter blur-3xl opacity-100 animate-accordion-down"></div>
+          </div>
+          {/* Functional  */}
+          <div className='flex relative justify-end flex-col sm:ml-10 pb-1'>
+            <h1 className="font-bold text-6xl sm:text-[8rem] opacity-15">Ground Team</h1>
+            <h4 className='absolute top-5 left-3 sm:top-16 font-semibold text-indigo-400 text-2xl sm:text-4xl'>Ground Team</h4>
+          </div>
+           {
+            <div className="flex justify-center mx-auto md:mx-12  my-16 md:my-24">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-16 ">
+               {
+                ground_team.map((team, index) => (
+                  <BackgroundGradient key={index} linkedIn = {team.linkedIn} imageUrl={team.imageUrl} name={team.name} title={team.title} className="rounded-[22px] max-w-sm p-1 bg-zinc-900 object-contain"/>
+                ))
+               }  
+   
+             </div>
+            </div>
+           }
+
+        </div>
+      </div>
+      <Footer />
+    </div>
+  )
+}
+
+export default Page;
